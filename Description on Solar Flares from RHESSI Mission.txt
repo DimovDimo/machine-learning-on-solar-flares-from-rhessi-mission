@@ -1,0 +1,247 @@
+Solar Flares from RHESSI Mission (https://www.kaggle.com/khsamaha/solar-flares-rhessi)
+
+Context
+
+Reuven Ramaty High Energy Solar Spectroscopic Imager (RHESSI, originally High Energy Solar Spectroscopic Imager or HESSI) is a NASA solar flare observatory. It is the sixth mission in the Small Explorer program, selected in October 1997 and launched on 5 February 2002. Its primary mission is to explore the physics of particle acceleration and energy release in solar flares. HESSI was renamed to RHESSI on 29 March 2002 in honor of Reuven Ramaty, a pioneer in the area of high energy solar physics. RHESSI is the first space mission named after a NASA scientist. RHESSI was built by Spectrum Astro for Goddard Space Flight Center and is operated by the Space Sciences Laboratory in Berkeley, California. The principal investigator from 2002 to 2012 was Robert Lin, who was succeeded by Säm Krucker.
+
+useful links: https://en.wikipedia.org/wiki/Reuven_Ramaty_High_Energy_Solar_Spectroscopic_Imager https://hesperia.gsfc.nasa.gov/hessi/objectives.htm
+
+Content
+
+Ramaty High Energy Solar Spectroscopic Imager (RHESSI)
+
+Notes: Note that only events with non-zero position and energy range not equal to 3-6 keV are confirmed as solar sources. Events which have no position and show up mostly in the front detectors, but were not able to be imaged are flagged as "PS".
+
+Events which do not have valid position are only confirmed to be non-solar if the NS flag is set.
+
+Peak Rate: peak counts/second in energy range 6-12 keV, averaged over active collimators, including background.
+
+Total Counts: counts in energy range 6-12 keV integrated over duration of flare summed over all subcollimators, including background.
+
+Energy: the highest energy band in which the flare was observed. Electron Kev (kilo electron volt) https://en.wikipedia.org/wiki/Electronvolt
+
+Radial Distance: distance from Sun center
+
+Quality Codes: Qn, where n is the total number of data gap, SAA, particle, eclipse or decimation flags set for event. n ranges from 0 to 11. Use care when analyzing the data when the quality is not zero.
+
+Active_Region: A number for the closest active region, if available
+
+radial_offset: the offset of the flare position from the spin axis of the spacecraft in arcsec. This is used i spectroscopy.
+
+peak_c/s: peak count rate in corrected counts.
+
+Flare Flag Codes: a0 - In attenuator state 0 (None) sometime during flare a1 - In attenuator state 1 (Thin) sometime during flare a2 - In attenuator state 2 (Thick) sometime during flare a3 - In attenuator state 3 (Both) sometime during flare An - Attenuator state (0=None, 1=Thin, 2=Thick, 3=Both) at peak of flare DF - Front segment counts were decimated sometime during flare DR - Rear segment counts were decimated sometime during flare ED - Spacecraft eclipse (night) sometime during flare EE - Flare ended in spacecraft eclipse (night) ES - Flare started in spacecraft eclipse (night) FE - Flare ongoing at end of file FR - In Fast Rate Mode FS - Flare ongoing at start of file GD - Data gap during flare GE - Flare ended in data gap GS - Flare started in data gap MR - Spacecraft in high-latitude zone during flare NS - Non-solar event PE - Particle event: Particles are present PS - Possible Solar Flare; in front detectors, but no position Pn - Position Quality: P0 = Position is NOT valid, P1 = Position is valid Qn - Data Quality: Q0 = Highest Quality, Q11 = Lowest Quality SD - Spacecraft was in SAA sometime during flare SE - Flare ended when spacecraft was in SAA SS - Flare started when spacecraft was in SAA
+
+Acknowledgements
+
+What is a solar flare?
+
+A Solar flare is the rapid release of a large amount of energy stored in the solar atmosphere. During a flare, gas is heated to 10 to 20 million degrees Kelvin (K) and radiates soft X rays and longer-wavelength emission. Unable to penetrate the Earth's atmosphere, the X rays can only be detected from space. Instruments on Skylab, SMM, the Japanese/US Yohkoh mission and other spacecraft have recorded many flares in X rays over the last twenty years or so. Ground-based observatories have recorded the visible and radio outputs. These data form the basis of our current understanding of a solar flare. But there are many possible mechanisms for heating the gas, and observations to date have not been able to differentiate between them.
+
+HESSI's new approach
+
+Researchers believe that much of the energy released during a flare is used to accelerate, to very high energies, electrons (emitting primarily X-rays) and protons and other ions (emitting primarily gamma rays). The new approach of the HESSI mission is to combine, for the first time, high-resolution imaging in hard X-rays and gamma rays with high-resolution spectroscopy, so that a detailed energy spectrum can be obtained at each point of the image.
+
+This new approach will enable researchers to find out where these particles are accelerated and to what energies. Such information will advance understanding of the fundamental high-energy processes at the core of the solar flare problem. https://hesperia.gsfc.nasa.gov/hessi/objectives.htm
+
+Inspiration
+
+    Explore,
+    Know something new,
+    Predict the solar flare,
+    Respect the Sun and value it and
+    Take care of the environments.
+Thanks
+
+__________________________________________________________________________________________________________________________________________
+
+HESSI Scientific Objectives (https://hesperia.gsfc.nasa.gov/hessi/objectives.htm)
+
+What is a solar flare?
+
+A Solar flare is the rapid release of a large amount of energy stored in the solar atmosphere. During a flare, gas is heated to 10 to 20 million degrees Kelvin (K) and radiates soft X rays and longer-wavelength emission. Unable to penetrate the Earth's atmosphere, the X rays can only be detected from space. Instruments on Skylab, SMM, the Japanese/US Yohkoh mission and other spacecraft have recorded many flares in X rays over the last twenty years or so. Ground-based observatories have recorded the visible and radio outputs. These data form the basis of our current understanding of a solar flare. But there are many possible mechanisms for heating the gas, and observations to date have not been able to differentiate between them.
+
+HESSI's new approach
+
+Researchers believe that much of the energy released during a flare is used to accelerate, to very high energies, electrons (emitting primarily X-rays) and protons and other ions (emitting primarily gamma rays). The new approach of the HESSI mission is to combine, for the first time, high-resolution imaging in hard X-rays and gamma rays with high-resolution spectroscopy, so that a detailed energy spectrum can be obtained at each point of the image.
+
+This new approach will enable researchers to find out where these particles are accelerated and to what energies. Such information will advance understanding of the fundamental high-energy processes at the core of the solar flare problem.
+
+Primary Scientific Objective
+
+The primary scientific objective of HESSI is to understand the following processes that take place in the magnetized plasmas of the solar atmosphere during a flare:
+    Impulsive energy release,
+    Particle acceleration,
+    Particle and energy transport.
+
+These high-energy processes play a major role at sites throughout the universe ranging from magnetospheres to active galaxies. Consequently, the importance of understanding these processes transcends the field of solar physics; it is one of the major goals of space physics and astrophysics.
+
+The high energy processes of interest include the following:
+    The rapid release of energy stored in unstable magnetic configurations,
+    The equally rapid conversion of this energy into the kinetic energy of hot plasma and accelerated particles (primarily electrons, protons and ions),
+    The transport of these particles through the solar atmosphere and into interplanetary space,
+    The subsequent heating of the ambient solar atmosphere.
+
+These processes involve:
+    Particle energies to many GeV,
+    Temperatures of tens or even hundreds of millions of degrees,
+    Densities as low as 100 million particles per square cm,
+    Spatial scales of tens of thousands of kilometers, and
+    Magnetic containment times of seconds to hours.
+
+It is impossible to duplicate these conditions in laboratories on the Earth.
+
+The acceleration of electrons is revealed by hard X-ray and gamma-ray bremsstrahlung while the acceleration of protons and ions is revealed by gamma-ray lines and continuum. The proximity of the Sun means, not only that these high-energy emissions are orders of magnitude more intense than from any other cosmic source, but also that they can be better resolved, both spatially and temporally.
+
+Scientific Questions
+
+The fundamental unanswered questions concerning energy release and particle acceleration in solar flares are the following:
+    What role do high energy particles play in the energy release process?
+    Do the high energy particles carry a significant fraction of the released energy?
+    What mechanisms accelerate both electrons and ions to high energies so rapidly and efficiently?
+    What is the environment in which this energy release occurs?
+    What mechanisms transport the flare energy, the energetic particle component in particular, away from the energy release site?
+    What are the characteristic radiation signatures of flares that have potentially hazardous effects, and how do these flares occur and evolve?
+
+Observational Objectives
+
+HESSI will address these questions through the following key observational objectives:
+    Locate the energy release site and determine the characteristics of the energy release process.
+    Locate the particle acceleration and energy deposition sites during the different flare phases and determine how the particle energy is dissipated throughout the flaring region.
+    Determine the spectra and directivity of the accelerated electrons and ions and their evolution in time and space.
+    Determine the contribution of high-energy particles to flare energetics, specifically by measuring X-rays, gamma-rays, and the major contributors to the radiation energy budget, namely the soft X-ray and optical emissions.
+    Characterize the plasma and the magnetic field in the region where the nonthermal processes occur.
+    Determine if all flares, large and small, have similar characteristics suggesting that they are all manifestations of the same basic processes.
+    Determine the characteristics of microflares and estimate their contribution to coronal heating.
+    Determine the elemental composition of the accelerated particles and of the solar atmosphere with which they interact.
+    Study the long-term storage and/or acceleration of high-energy ions at the Sun by observing nuclear-line emission for extended time periods prior to and following the impulsive phase of flares.
+
+Observational Approach
+
+With appropriate context information, imaging and spectroscopic observations of hard X rays and gamma rays serve as the best diagnostics of the underlying physics of flares. The HESSI instrumentation is optimized to make such observations with unprecedented precision.
+
+HESSI will have the capabilities to carry out the following observations:
+    X-ray and gamma-ray imaging spectroscopy with the finest angular and energy resolutions ever achieved and with a higher sensitivity over a broader energy range than ever before, from a few keV to hundreds of keV.
+    X-ray and gamma-ray spectroscopy with the finest energy resolution ever achieved and with high sensitivity to energies of at least 20 MeV.
+
+In order to achieve a full understanding of the acceleration of electrons and ions, and their transport through the solar atmosphere, it is essential to obtain support observations of the plasma and the magnetic fields where the hard X-ray and gamma-ray sources are situated, i.e., the thermal, dynamic, and magnetic context of the high energy flare.
+
+The required context observations are as follows:
+    Soft X-ray, EUV, and UV imaging and spectroscopy from space with similar spatial and temporal resolutions to the X-ray and gamma-ray measurements.
+    Radio and optical imaging and spectroscopy, and vector magnetic field measurements from the ground.
+
+HESSI will obtain the following images and spectra of many solar flares:
+    
+    Hard X-ray images
+
+    Angular resolution:  2 to 7 arcseconds
+    Temporal resolution:  tens of milliseconds
+    Energy Range:  3 keV to 400 keV
+
+These spatial and temporal resolving powers match the spatial and temporal scales that characterize the processes of energy release, acceleration, and transport. The images will be obtained with sufficient sensitivity to detect the initial energy release and particle acceleration and study microflares with an energy release of less than 1026 ergs. The dynamic range must be such that the larger flares with an energy release of 1032 ergs or greater can also be imaged with minimal saturation. Such images will enable us not only to locate the energy release site or sites for the first time, but also to evaluate, both qualitatively and quantitatively, the evolution of the released energy as a result of interactions with the ambient atmosphere during the impulsive and gradual phases of many solar flares of different types.
+    
+    High-resolution X-ray spectra
+
+    Resolution:  0.5 keV to 2 keV
+    Energy Range:  3 keV to 400 keV
+
+The spectral resolving power is sufficiently fine to allow the deciphering of the rich and detailed information encoded in the highly structured photon continuum spectrum. The measurement of the precise shape of the X-ray continuum made possible with such fine energy resolution will provide unique information on the spectrum of the accelerated electrons and on the heated plasma, thus allowing the thermal and nonthermal aspects of individual flares to be clearly distinguished.
+    
+    Spectrally resolved hard X-ray images
+
+
+Such imaging spectroscopy, by which we mean high-resolution spectroscopy at each point of the X-ray image, with subsecond time resolution, will allow spectral changes to be measured as the electrons propagate along the magnetic field in the flaring loop or loops. It represents an important new capability not previously available in this wavelength range that will provide powerful new constraints on the mechanisms of energy gain and loss. Furthermore, the Sun is the only astrophysical X-ray or gamma-ray source bright enough and close enough to allow such observations to be made with present instrumentation.
+    
+    High-resolution gamma-ray spectra
+
+    Energy resolution:  2 keV to 5 keV (FWHM)
+    Energy range:  400 keV to 20 MeV
+
+The energy resolution is sufficient to resolve the gamma-ray lines and to measure their shapes, thus allowing the full potential of true astrophysical gamma-ray line spectroscopy to be realized for the first time. The Sun is the only cosmic gamma-ray source bright enough to allow such studies to be carried out with present instrumentation. The high-resolution spectra obtained with HESSI will provide unique information on the directionality of the interacting particles, the composition of both the ambient gas and the accelerated ions, and the temperature, density, and state of ionization of the ambient gas.
+    
+    Gamma-ray images
+
+    Angular resolution:  7 to 30 arcseconds
+    Energy range:  400 keV to 20 MeV
+
+The exploratory high-resolution gamma-ray imaging spectroscopy will allow images to be obtained in specific gamma-ray lines or energy ranges such that, for example, the proton- and alpha-induced lines around 450 keV could be imaged separately, as could the 511 keV positron annihilation line. The intercomparison of images in radiation from different types of particles including electrons, positrons, protons, and alpha particles will allow the effects of differences in charge and mass on the acceleration and propagation processes to be explored for the first time.
+
+Context Observations from Space
+
+The following observations from space are highly desirable, but because of the severe budgetary constraints on HESSI cannot be funded by this program.  It is hoped that they will be provided by other US or foreign spacecraft.
+    
+    Soft X-ray images
+
+    Angular resolution:  2 arcseconds
+    Broadband spectral coverage:  0.25 to 4 keV
+    Temporal resolution:  < 1 s
+
+These observations will provide detailed morphology and temperature information on the thermal plasma in the flaring region in which the high-energy processes take place and on the broader area of the solar disk that may be influencing the activity. By tracing out the magnetic loops filled with hot plasma, these images will also provide information on the magnetic configurations in and around the active region before, during, and after the flares.
+    
+    Soft X-ray images with fine spectral resolution
+
+    Angular resolution of 2 arcseconds
+    Spectral resolution corresponding to a velocity of 40 km/s
+    Wavelengths spanning several high temperature emission lines
+
+These images would be the first with such high spectral resolution and would allow the diagnostic parameters of temperature, emission measure, velocity, density, abundance, and polarization to be determined at different areas in the field of view and followed throughout the flare.
+    
+    UV and EUV images
+
+    Angular resolution of 2 arcseconds
+    Spectral resolution corresponding to a velocity of 40 km/s
+    Wavelength ranges from 240 to 285 Å and from 1200 to 1425 Å
+
+These observations would provide information on thermal plasma over a broad temperature range including the transition region and the cooler flare temperatures. Diagnostics such as temperatures, emission measures, velocities, and abundances will be derived as a function of space and time before, during, and after flares. In addition, the role of low energy protons (< 1 MeV) in the flare energetics can be determined by searching for beams of such particles through the red-shifted Lyman-alpha emission that they produce after electron capture from ambient hydrogen.
+
+Observations from the Ground
+
+An integral component of the baseline HESSI mission is an extensive program of ground-based measurements that provide crucial context observations and complementary measurements of the high-energy processes. They will provide context information on the morphology and dynamics of the thermal plasma and the magnetic field strengths and morphology in both the photosphere and the corona. In addition, they will provide complementary information on the high energy components of flares such as the energetic electrons and ions, shocks, and other indications of nonthermal processes.
+
+The observational objectives of the ground-based program are to obtain the following information:
+    
+    Vector magnetograms
+
+    Spatial resolution: 2 arcseconds
+    Field of view: Full active region
+
+These will provide the structure of the magnetic fields and electric currents in the photosphere and chromosphere and will allow HESSI to determine the spatial relationship between regions of electron and proton precipitation and regions of currents and magnetic shear.
+    
+    Microwave imaging spectra
+
+    Spatial resolution:  30 arcseconds at 1 GHz, 1 - 2 arcseconds at 22 GHz
+    Spectral resolution:  10 - 20%
+    Frequency coverage:  1.4 - 22 GHz
+
+These will allow the microwave sources to be resolved both spatially and spectrally in order to measure the strength of the coronal magnetic fields in the actual regions of electron acceleration and transport. The structure and thermodynamic conditions of these regions can be determined, not only during the energy release phase of a flare, but also prior to and following a flare. Microwave observations provide the only direct measurement of the strong magnetic fields in the coronal electron acceleration regions.
+    
+    High-resolution optical images
+
+    Spatial resolution:  1 to 2 arcseconds
+    Field of view:  Full active-region
+
+These images will be used to determine the preflare and flare structure and dynamics of the photosphere and chromosphere. High resolution H-alpha images reveal the chromospheric magnetic connectivity in regions of electron and ion precipitation. Similar high resolution in white light pinpoints regions of energy precipitation to the photospheric regions accessible to only the most energetic ions. Polarimetric images allow explorations for evidence of both strong electric fields and 100-keV nonthermal protons.
+    
+    High dynamic range radio images
+
+    Wavelengths: millimeter, microwave, meter, decimeter
+    Dynamic range: 10:1 to 100:1
+    Spatial resolution: 1 arcminute at dm wavelengths 1 arcsecond at mm wavelengths (sufficient to resolve the source structures)
+
+Images at millimeter wavelengths provide a high quality, field-weighted observational perspective on ~1 MeV energetic electrons, responsible for the high energy bremsstrahlung continuum. Microwave images provide a sensitive indication of the field-weighted morphology of lower energy nonthermal electrons. Meter/decimeter images provide information on shocks, electron beams, and trapped electrons in the corona through the plasma radiation that they generate.
+    
+    Optical imaging spectra in energetically dominant lines and in the continuum
+
+    Lines of interest: H-alpha, Ca II K, etc.
+    Temporal resolution: 1 s
+    Spatial resolution: 2 arcseconds
+    Spectral resolution: delta lambda/lambda < v(thermal)/c
+
+Such data allow the contribution of optical emission to the flare energy budget to be determined. More specifically, the optical radiative energy loss from the thermal plasma can be compared with the energy content of both the soft X-ray emitting thermal plasma and the nonthermal electrons and ions. This will enable the first comprehensive determination of particle acceleration efficiency to be made in solar flares.
+    
+    Lines and continuum images using coronagraphs and coronal polarimeters
+
+    Spatial resolution:  2 arcseconds
+    Field of view:  Full-limb
+
+Such images will be used to determine the morphology and dynamics of inner coronal structures. In combination with outer coronal images from SOHO, they relate high-energy ions and electrons to the structure and dynamics of the large-scale coronal field and to a rich variety of interplanetary wave and plasma phenomena.
